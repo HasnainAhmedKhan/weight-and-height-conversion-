@@ -92,10 +92,10 @@ const styles = StyleSheet.create({
     backgroundColor: 'black'
   },
   button: {
-    width: '50%',
+    width: '40%',
     padding: 10,
     backgroundColor: 'green',
-    borderRadius: 12,
+    borderRadius: 15,
     margin: 5,
     alignItems: 'center',
   },

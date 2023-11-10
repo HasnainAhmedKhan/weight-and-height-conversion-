@@ -32,12 +32,13 @@ const UnitToggle = ({ isMetric, onToggle }) => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    paddingHorizontal: 20,
   },
   button: {
     flex: 1,
     padding: 10,
     backgroundColor: 'white',
-    borderRadius: 12,
+    borderRadius: 15,
     margin: 5,
     alignItems: 'center',
   },

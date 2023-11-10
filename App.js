@@ -12,11 +12,12 @@ const App = () => {
     <ConversionProvider>
       <NavigationContainer>
         <Tab.Navigator
-          screenOptions={({ route }) => ({
-            tabBarLabel: route.name, // Use the route name as the label
-            headerShown: false, // Hide the header
-            headerStyle: { backgroundColor: 'green' },
-          })}
+          screenOptions={{
+            headerShown: false, 
+            tabBarActiveTintColor: 'white', 
+            tabBarInactiveTintColor: 'black', 
+            tabBarStyle: { backgroundColor: 'green' , color: 'white'}, 
+          }}
         >
           <Tab.Screen name="Hooks" component={HooksTab} />
           <Tab.Screen name="MobX" component={MobxTab} />

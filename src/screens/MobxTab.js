@@ -48,7 +48,7 @@ const MobxTab = observer(() => {
         value={store.weight}
         unit={store.unit === 'imperial' ? 'lbs' : 'kg'}
         onUnitChange={store.setWeight}
-        onValueChange={handleWeightChange} 
+        onChangeText={handleWeightChange} 
         keyboardType="numeric"
       />
       <ConversionInput
@@ -56,7 +56,7 @@ const MobxTab = observer(() => {
         value={store.height}
         unit={store.unit === 'imperial' ? 'ft' : 'm'}
         onUnitChange={store.setHeight}
-        onValueChange={handleHeightChange}
+        onChangeText={handleHeightChange}
         keyboardType="numeric"
       />
       <UnitToggle isMetric={store.unit === 'metric'} onToggle={handleToggle} />

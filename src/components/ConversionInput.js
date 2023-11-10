@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextInput, View, Text, StyleSheet } from 'react-native';
 
-const ConversionInput = ({ label, value, onChangeText, keyboardType }) => {
+const ConversionInput = ({ label, value, onChangeText, keyboardType, ...props}) => {
   return (
     <View style={styles.inputContainer}>
       
